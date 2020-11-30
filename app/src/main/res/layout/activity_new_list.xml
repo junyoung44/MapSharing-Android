@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_mapname"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="리스트의 이름을 입력해주세요." />
+
+    <EditText
+        android:id="@+id/edit_mapintro"
+        android:layout_width="302dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="리스트에 대한 간략한 설명을 작성해주세요." />
+
+    <EditText
+        android:id="@+id/edit_mapcolor"
+        android:layout_width="302dp"
+        android:layout_height="97dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="색깔 선택" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/choice"
+            android:gravity="center|center_vertical"
+            android:text="Private"
+            android:textSize="30sp" />
+
+        <Switch
+            android:id="@+id/choice"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_onoff_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/choice"
+            android:gravity="center|center_vertical"
+            android:text="Public"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
